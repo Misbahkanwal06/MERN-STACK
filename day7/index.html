@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 7 JS</title>
+    <link rel="stylesheet" href="./BOOTSTRAP/css/bootstrap.min.css">
+    <script src="./BOOTSTRAP/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!--JS is loosly typed language (compilation at run time) -->
+    <button class="btn btn-success" onclick="hello()">Submit</button>
+
+    <!-- Display Name -->
+    <div class="container mt-5">
+        <h1 class="bg-dark text-white text-center">Display Name</h1>
+        <input type="text" name="name" class="form-control m-2 border-dark" placeholder="name" id="myName">
+        <button type="button" class="btn-success m-2" onclick="displayName()">Display Name</button><br>
+    </div>
+
+    <div class="container mt-5">
+        <h1 class="bg-secondary text-white text-center">Percentage Calculator</h1>
+        <input type="number" class="form-control m-2 border border-dark" placeholder="obtain marks" id="obtain">
+        <input type="number" class="form-control m-2 border-dark" placeholder="Total marks" id="total">
+        <input type="number" class="form-control m-2 border-dark" placeholder="Total marks" readonly id="see">
+        <button class="btn-success m-2" type="button" onclick="percentage()">calculate</button>
+    </div>
+
+
+    <!-- Javascript -->
+    <script>
+        // alert("hello world");
+        var a;
+        a = 12;
+        function hello() {
+            // debugger
+            alert("hello world");
+        }
+        function displayName() {
+            var n = document.getElementById('myName').value;
+            // document.write(n);
+            alert(n);
+        }
+
+        // parameterize funtion
+        function multi(n1, n2) {
+            var n = n1 * n2;
+            return n;
+        }
+        multi(2, 3);
+
+        // percentage calculate
+        function percentage() {
+            var o = document.getElementById('obtain').value * 1;
+            var t = document.getElementById('total').value * 1;
+            var per = (o / t) * 100;
+            alert(per + "%");
+            // s.innerText = per;
+            // var s = document.getElementById('see').value = per.toFixed(2);
+            var s = document.getElementById('see').value = GetPer(o, t);
+        }
+        function GetPer(o, t) {
+            debugger
+            return ((o / t) * 100).toFixed(2);
+        }
+
+        // OBJECT
+        var std = {
+            username: "misbah",
+            email: "misbah@gmail.com",
+            roll: "31"
+
+        };
+
+        // ARRAY
+
+        var arr = [
+            {
+                username: "misbah",
+                email: "misbah@gmail.com",
+                roll: "31"
+
+            },
+            {
+                username: "misbah",
+                email: "misbah@gmail.com",
+                roll: "31"
+
+            },
+        ];
+
+        var arr2 = ["misbah","fasiha","sania","namrita","iqra"];
+        for (let i= 0; i < arr2.length; i++) {
+            // debugger
+            if(i == 1){
+                // continue;
+                // break;
+            }
+            var element = arr2[i];
+            console.log(element);
+            
+        }
+        // Switch more efficient than if else bcz it direct switch on case
+
+        // // ternary operators
+        // if(i == 1) ? "yess":"no";
+
+    </script>
+
+</body>
+
+</html>
