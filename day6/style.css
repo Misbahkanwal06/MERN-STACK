@@ -1,0 +1,25 @@
+.flex{
+    display: flex;
+    background-color: aqua;
+    height: 300px;
+    justify-content:space-around;
+    /* align-items:first baseline; */
+    /* align-items: center; */
+    /* align-content:center ; */
+    
+}
+.flex-item{
+    text-align: center;
+    background-color: cadetblue;
+    border: 1px solid silver;
+    height: 100px;
+    width: 200px;
+    align-content:center;
+    
+}
+.flex-item2{
+    flex-basis:500px;
+    height: 100px;
+    background-color: cadetblue;
+    order:5;
+}
