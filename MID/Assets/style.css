@@ -1,0 +1,53 @@
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer{
+    height: 100px;
+}
+.carousel-item img{
+    height: 90vh;
+}
+.card{
+    height: 400px;
+}
+.card img{
+    height: 200px;
+}
+.card-body{
+
+}
+.footer2{
+    height: 150px;
+    /* background-color: rgb(163, 111, 15); */
+    background-color: rgb(223, 161, 47);
+    
+
+}
+
+.navbar{
+    height: 85px;
+    background-color: rgb(230, 182, 93);
+}
+.header{
+    height: 80px;
+    background-color: rgb(230, 182, 93); 
+}
+.faq p{
+color: orange;
+font-weight: bold;
+}
+.faq b{
+    color: black;
+    font-weight: bold;
+}
+form{
+    /* background-color: rgb(39, 34, 34); */
+    background-color: rgb(230, 182, 93); 
+}
+.button{
+    background-color: rgb(233, 167, 44); 
+
+}
